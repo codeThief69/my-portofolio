@@ -9,6 +9,7 @@
 
 
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -837,8 +838,11 @@ img {
 }
 
 .cards{
-  width: auto;
+  width: 100%;
   transition: all ease 300ms;
+  justify-content: space-between;
+
+
   
   
 }
@@ -854,9 +858,9 @@ img {
 
 
 .neonSeperator4{
-  width: 99%;
+  width: 100%;
   justify-content: center;
-  margin-inline: 20px;
+margin-inline-start: 20%;
 }
 
 .project{

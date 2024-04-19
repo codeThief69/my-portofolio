@@ -7,6 +7,7 @@ const hideicon = document.querySelector(`.hiddenicon`);
 const back = document.querySelector(`.back`);
 const next = document.querySelector(`.next`);
 const cards = document.querySelector(`.cards`)
+const projects = document.querySelectorAll(`.neonSeperator4`)
 
 let slide = 0;
 
@@ -23,13 +24,13 @@ togglerBtn.addEventListener("click", () => {
 });
 
 if(screen.width<=1200){
-  cards.children.forEach((card) =>{
+  projects.forEach((card) =>{
      card.dataset.aos = ""
   })
 }
 
 back.addEventListener('click', () => {
-  slide = slide<0 ? slide + 100 : -300
+  slide = slide<0 ? slide + 90 : -300
   cards.style.transform = `translateX(${slide}%)` 
 })
 
